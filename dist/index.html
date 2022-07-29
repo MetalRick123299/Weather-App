@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="./main.js" defer></script>
     <title>Weather App</title>
   </head>
   <body>
-    Hello World
+    <div id="searchbar">
+      <input id="inputPlace" type="text" placeholder="Search Location..." />
+      <img src="./images/magnify.svg" alt="Search Button" />
+    </div>
+    <div id="weather">
+      <div>
+        <span>weatherText</span>
+        <span>location- </span>
+      </div>
+
+      <div>currentTemp:</div>
+
+      <div>
+        <span>feels like:</span>
+        <span>wind:</span>
+        <span>humidity:</span>
+      </div>
+    </div>
   </body>
 </html>

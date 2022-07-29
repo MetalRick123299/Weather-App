@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  color: white;
+}
+
+#inputPlace {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+#searchbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5rem 0 5rem 0;
+  padding: 0.25rem;
+  border-bottom: 3px solid white;
+}
+
+#searchbar img {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#weather {
+  font-size: 2rem;
+}
