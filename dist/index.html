@@ -10,21 +10,23 @@
   </head>
   <body>
     <div id="searchbar">
+      <button id="unitChange">&#8457;</button>
       <input id="inputPlace" type="text" placeholder="Search Location..." />
-      <img src="./images/magnify.svg" alt="Search Button" />
+      <img id="weatherButton" src="./images/magnify.svg" alt="Search Button" />
     </div>
+    <div id="error" style="visibility: hidden">City was not found</div>
     <div id="weather">
-      <div class="weatherText">
+      <div id="weatherText">
         <span>Mostly Sunny</span>
-        <h2>Miami Florida</h2>
+        <h2>Miami</h2>
       </div>
 
       <div class="weatherContent">
-        <span class="temp">90</span>
+        <span class="temp" id="currentTemp">90</span>
         <div class="weatherDetails">
-          <span>Feels Like: <span class="temp">102</span></span>
-          <span>Wind: 17 MPH</span>
-          <span>Humidity: 58%</span>
+          <span>Feels Like: <span class="temp" id="feelsLike">102</span></span>
+          <span id="wind">Wind: 17 MPH</span>
+          <span id="humidity">Humidity: 58%</span>
         </div>
       </div>
     </div>

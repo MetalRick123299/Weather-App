@@ -16,20 +16,27 @@ body {
   color: white;
 }
 
-#inputPlace {
-  margin: 1rem;
-  font-size: 2rem;
-}
-
 #searchbar {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 
-  margin: 5rem 0 5rem 0;
+  margin-top: 5rem;
   padding: 0.25rem;
   border-bottom: 3px solid white;
+}
+
+#inputPlace,
+#unitChange {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+#error {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  color: red;
 }
 
 #searchbar img {
@@ -40,6 +47,7 @@ body {
 
 #weather {
   font-size: 2rem;
+  margin-top: 2.5rem;
 }
 
 .weatherText {
@@ -67,8 +75,11 @@ body {
   border-left: 3px solid white;
 }
 
-.temp::after {
+/* .temp::after {
   content: '\00B0 F';
   font-size: 75%;
-  position: relative;
+} */
+
+#unitChange {
+  padding: 0 1rem;
 }
