@@ -1,2 +1,2 @@
-import './style.css';
+import './styles.css';
 import * as weather from './weather';
