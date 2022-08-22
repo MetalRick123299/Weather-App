@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite-example/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/vite-example/assets/index.2eccdaac.js"></script>
-    <link rel="stylesheet" href="/vite-example/assets/index.d0964974.css">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather App</title>
+    <script type="module" crossorigin src="/vite-example/assets/index.da7b664b.js"></script>
+    <link rel="stylesheet" href="/vite-example/assets/index.8aa55f45.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="searchbar">
+      <button id="unitChange">&#8457;</button>
+      <input id="inputPlace" type="text" placeholder="Search Location..." />
+      <img id="weatherButton" src="/vite-example/assets/magnify.273a1213.svg" alt="Search Button" />
+    </div>
+    <div id="error" style="visibility: hidden">City was not found</div>
+    <div id="weather">
+      <div id="weatherText">
+        <span>Mostly Sunny</span>
+        <h2>Miami</h2>
+      </div>
+
+      <div class="weatherContent">
+        <span class="temp" id="currentTemp">90</span>
+        <div class="weatherDetails">
+          <span>Feels Like: <span class="temp" id="feelsLike">102</span></span>
+          <span id="wind">Wind: 17 MPH</span>
+          <span id="humidity">Humidity: 58%</span>
+        </div>
+      </div>
+    </div>
     
   </body>
 </html>
