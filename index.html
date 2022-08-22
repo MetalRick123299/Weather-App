@@ -2,12 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Weather App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="searchbar">
+      <button id="unitChange">&#8457;</button>
+      <input id="inputPlace" type="text" placeholder="Search Location..." />
+      <img id="weatherButton" src="./magnify.svg" alt="Search Button" />
+    </div>
+    <div id="error" style="visibility: hidden">City was not found</div>
+    <div id="weather">
+      <div id="weatherText">
+        <span>Mostly Sunny</span>
+        <h2>Miami</h2>
+      </div>
+
+      <div class="weatherContent">
+        <span class="temp" id="currentTemp">90</span>
+        <div class="weatherDetails">
+          <span>Feels Like: <span class="temp" id="feelsLike">102</span></span>
+          <span id="wind">Wind: 17 MPH</span>
+          <span id="humidity">Humidity: 58%</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
